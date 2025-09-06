@@ -1,0 +1,52 @@
+# Server Configuration
+NODE_ENV=development
+PORT=3000
+API_PORT=5000
+AI_ENGINE_PORT=8000
+HOST=0.0.0.0
+
+# Frontend Configuration
+FRONTEND_URL=http://localhost:3000
+API_BASE_URL=http://localhost:5000/api/v1
+
+# WebSocket Configuration
+WS_PORT=5001
+WS_URL=http://localhost:5001
+WS_ENABLED=true
+
+# Database Configuration
+DB_TYPE=postgresql
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=futuremedx_clinical
+DB_USER=futuremedx_user
+DB_PASSWORD=your_secure_password
+DB_SSL=false
+
+# MongoDB Configuration (for session store)
+MONGO_URI=mongodb://localhost:27017/futuremedx_sessions
+MONGO_OPTIONS_USE_NEW_URL_PARSER=true
+MONGO_OPTIONS_USE_UNIFIED_TOPOLOGY=true
+
+# Redis Configuration (for caching)
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+REDIS_DB=0
+
+# Security
+JWT_SECRET=your_jwt_secret_key_here
+SESSION_SECRET=your_session_secret_key_here
+ENCRYPTION_KEY=your_encryption_key_here
+CORS_ORIGIN=http://localhost:3000
+SALT_ROUNDS=10
+
+# AI/ML Configuration
+AI_ENGINE_URL=http://localhost:8000
+AI_SERVER_URL=http://localhost:8000  # Backward compatibility
+ML_MODEL_PATH=/ai-engine/models
+TENSORFLOW_THREADS=4
+PYTORCH_THREADS=4
+AI_ENGINE_TIMEOUT=30000
+AI_ENGINE_RETRIES=3
+AI_ENGINE_RETRY_DELAY=1000
